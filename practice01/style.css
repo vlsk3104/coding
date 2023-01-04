@@ -18,7 +18,7 @@ body {
 }
 
 /* リセット / ノーマライズ / サニタイズ */
-body, h1, h2, h3, h4, h5, h6, p ul, div, figure {
+body, h1, h2, h3, h4, h5, h6, p, ul, figure {
   margin: 0;
   padding: 0;
 }
@@ -72,13 +72,13 @@ a:hover {
   color: #333333;
   font-size: 12px;
   font-weight: 900;
-  line-height: 1.4px;
+  line-height: 1.4;
 }
 
 .site .desc {
   color: #707F89;
   font-size: 10px;
-  line-height: 1.4px;
+  line-height: 1.4;
 }
 
 @media(min-width: 900px) {
@@ -141,7 +141,7 @@ a:hover {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  line-height: 1.3px;
+  line-height: 1.3;
 }
 
 .hero img {
@@ -166,5 +166,36 @@ a:hover {
   .hero p {
     font-size: 16px;
     margin-bottom: 22px;
+  }
+}
+
+/* メッセージ */
+.message {
+  padding: 67px 0;
+  background-color: #2E5180;
+  color: #ffffff;
+}
+
+.message h2 {
+  margin-bottom: 38px;
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: center;
+}
+
+.message p {
+  max-width: 640px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+@media(min-width: 900px) {
+  .message {
+    padding: 81px 0;
+  }
+  .message h2 {
+    font-size: 36px;
+    line-height: 1.33;
   }
 }
