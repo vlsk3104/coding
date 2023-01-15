@@ -11,11 +11,33 @@
   <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
 </head>
 <body>
+  <header class="header">
+    <div class="site">
+      <img src="image/yamacafe-w.svg" alt="YAMACAFE ヤマカフェ">
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">こだわりメニュー</a></li>
+        <li><a href="#">お知らせ</a></li>
+        <li><a href="#">営業時間</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="nav-button" onclick="navFunc()">
+      <span class="sr-only">
+        MENU
+      </span>
+    </button>
+  </header>
   <div class="hero">
     <h1>
       <img src="image/catch.svg" alt="Take a Break">
     </h1>
   </div>
-
+  <script>
+    const navFunc = () => {
+      document.querySelector('html').classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
